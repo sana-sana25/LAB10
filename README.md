@@ -8,29 +8,22 @@ avec gestion dynamique de plusieurs fragments dans une seule activité.
 ## 📸 Captures d'écran
 
 ### Écran principal — Fragment 1 (Rose)
-<!-- Ajouter capture ici -->
-![Fragment 1](screenshots/fragment1.png)
+<img width="531" height="799" alt="image" src="https://github.com/user-attachments/assets/a39b2c4e-8625-4c3c-ab27-c26fff0e07ae" />
 
 ### Fragment 2 (Bleu)
-<!-- Ajouter capture ici -->
-![Fragment 2](screenshots/fragment2.png)
+<img width="554" height="810" alt="image" src="https://github.com/user-attachments/assets/1f98c17b-384a-4b02-a574-026bda765395" />
 
 ### Fragment List
-<!-- Ajouter capture ici -->
-![Fragment List](screenshots/fragment_list.png)
+<img width="552" height="789" alt="image" src="https://github.com/user-attachments/assets/f387d0f1-e29c-46de-8cae-5fd0273c58fa" />
+
 
 ### Navigation Drawer ouvert
-<!-- Ajouter capture ici -->
-![Navigation Drawer](screenshots/drawer_open.png)
+<img width="521" height="794" alt="image" src="https://github.com/user-attachments/assets/0e849410-e813-4c8d-9368-9a8085e7e7f9" />
 
 ---
 
 ## 🎥 Vidéo démonstrative
-<!-- Ajouter vidéo ici -->
-![Demo](screenshots/demo.gif)
-
-> 💡 Pour créer un GIF depuis une vidéo :
-> [ezgif.com](https://ezgif.com/video-to-gif)
+https://github.com/user-attachments/assets/eb3f0bd8-33ca-4af0-8402-16832d320dbf
 
 ---
 
@@ -46,6 +39,8 @@ Apprendre à :
 ---
 
 ## 🗂️ Architecture du projet
+
+```
 NavigationDrawerDemo/
 │
 ├── app/src/main/
@@ -72,6 +67,7 @@ NavigationDrawerDemo/
 │           ├── colors.xml
 │           ├── strings.xml
 │           └── themes.xml
+```
 
 ---
 
@@ -91,7 +87,7 @@ NavigationDrawerDemo/
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/TON_USERNAME/NavigationDrawerDemo.git
+git clone https://github.com/sana-sana25/LAB10.git
 
 # Ouvrir dans Android Studio
 File > Open > NavigationDrawerDemo
@@ -113,11 +109,10 @@ Shift + F10
 | 📊 **Fragment 2** | Fond bleu avec icône Dashboard |
 | 📋 **Fragment List** | Liste de 10 items scrollable |
 | ☰ **Navigation Drawer** | Menu latéral avec header profil |
-| 🔙 **Bouton retour** | Ferme le drawer si ouvert |
 
 ---
 
-## 🧩 Fragments
+## 🧩Fragments
 
 ### BlankFragment (Fragment 1)
 - Fond : `#F8BBD0` (Rose Pink 100)
@@ -136,6 +131,5 @@ Shift + F10
 
 ## 👨‍💻 Auteur
 
-**Ton Nom**
-- GitHub : [@TON_USERNAME](https://github.com/TON_USERNAME)
-- Email : ton@email.com
+**ASSEKNOUR Sana**
+ENSA-Marrakech
