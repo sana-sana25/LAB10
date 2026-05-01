@@ -1,0 +1,89 @@
+package com.example.navigationdrawerdemo;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
+
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
+
+    private DrawerLayout drawer;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // ── Toolbar ──────────────────────────────────────────
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        // ── DrawerLayout + Toggle (icône hamburger) ──────────
+        drawer = findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this,
+                drawer,
+                toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
+        );
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        // ── NavigationView ────────────────────────────────────
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        // ── Fragment par défaut au lancement ─────────────────
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.contenu, new BlankFragment())
+                    .commit();
+            navigationView.setCheckedItem(R.id.nav_fragment1);
+        }
+    }
+
+    // ── Gestion des clics sur le menu latéral ─────────────────
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.nav_fragment1) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.contenu, new BlankFragment())
+                    .commit();
+
+        } else if (id == R.id.nav_fragment2) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.contenu, new BlankFragment2())
+                    .commit();
+
+        } else if (id == R.id.nav_list) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.contenu, new FragmentList())
+                    .commit();
+        }
+
+        // Fermer le drawer après sélection
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    // ── Bouton retour ferme le drawer s'il est ouvert ─────────
+    @Override
+    public void onBackPressed() {
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+}

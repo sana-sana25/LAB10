@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Thème principal de l'application ── -->
+    <style name="Theme.NavigationDrawerDemo"
+        parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!--  ↑ NoActionBar  (avant c'était DarkActionBar) -->
+
+        <!-- Couleurs principales -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Couleurs Material 3 -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Toolbar -->
+        <item name="toolbarStyle">@style/Widget.NavigationDrawerDemo.Toolbar</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+    </style>
+
+    <!-- ── Thème sans ActionBar ── -->
+    <style name="Theme.NavigationDrawerDemo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- ── Style personnalisé de la Toolbar ── -->
+    <style name="Widget.NavigationDrawerDemo.Toolbar"
+        parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="subtitleTextColor">@color/drawer_header_email</item>
+    </style>
+
+    <!-- ── Style AppBar ── -->
+    <style name="Widget.NavigationDrawerDemo.AppBarLayout"
+        parent="Widget.MaterialComponents.AppBarLayout.Primary">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- ── Style NavigationView (menu latéral) ── -->
+    <style name="Widget.NavigationDrawerDemo.NavigationView"
+        parent="Widget.MaterialComponents.NavigationView">
+        <item name="itemTextColor">@color/colorPrimary</item>
+        <item name="itemIconTint">@color/colorAccent</item>
+        <item name="itemBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- ── Popup et menus ── -->
+    <style name="Theme.NavigationDrawerDemo.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="Theme.NavigationDrawerDemo.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

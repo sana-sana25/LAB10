@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F8BBD0">
+
+    <!-- Icône décorative -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_home"
+        app:tint="#E91E63"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/nav_header_desc"/>
+
+    <!-- Titre principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment 1"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#880E4F"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Sous-titre -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue sur le premier fragment"
+        android:textSize="16sp"
+        android:textColor="#AD1457"
+        android:gravity="center"/>
+
+    <!-- Séparateur décoratif -->
+    <View
+        android:layout_width="60dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#E91E63"/>
+
+</LinearLayout>

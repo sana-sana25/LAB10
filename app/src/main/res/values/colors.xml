@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Couleurs principales ── -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ── Couleurs du thème de l'app ── -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#E91E63</color>
+
+    <!-- ── Couleurs du header Drawer ── -->
+    <color name="drawer_header_bg">#3F51B5</color>
+    <color name="drawer_header_text">#FFFFFF</color>
+    <color name="drawer_header_email">#C5CAE9</color>
+
+    <!-- ── Couleurs Fragment 1 (Rose) ── -->
+    <color name="fragment1_bg">#F8BBD0</color>
+    <color name="fragment1_title">#880E4F</color>
+    <color name="fragment1_subtitle">#AD1457</color>
+    <color name="fragment1_accent">#E91E63</color>
+
+    <!-- ── Couleurs Fragment 2 (Bleu) ── -->
+    <color name="fragment2_bg">#3F51B5</color>
+    <color name="fragment2_text">#FFFFFF</color>
+    <color name="fragment2_subtitle">#C5CAE9</color>
+
+</resources>

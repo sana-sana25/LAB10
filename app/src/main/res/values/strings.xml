@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Nom de l'application ── -->
+    <string name="app_name">NavigationDrawerDemo</string>
+
+    <!-- ── Navigation Drawer ── -->
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+
+    <!-- ── Header du Drawer ── -->
+    <string name="nav_header_title">Navigation Drawer</string>
+    <string name="nav_header_subtitle">demo@example.com</string>
+    <string name="nav_header_desc">Photo de profil</string>
+
+    <!-- ── Titres des fragments ── -->
+    <string name="fragment1_title">Fragment 1</string>
+    <string name="fragment1_subtitle">Bienvenue sur le premier fragment</string>
+    <string name="fragment2_title">Fragment 2</string>
+    <string name="fragment2_subtitle">Bienvenue sur le deuxième fragment</string>
+
+    <!-- ── Fragment List ── -->
+    <string name="fragment_list_title">Fragment List</string>
+    <string name="item_1">Item 1</string>
+    <string name="item_2">Item 2</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_4">Item 4</string>
+    <string name="item_5">Item 5</string>
+    <string name="item_6">Item 6</string>
+    <string name="item_7">Item 7</string>
+    <string name="item_8">Item 8</string>
+    <string name="item_9">Item 9</string>
+    <string name="item_10">Item 10</string>
+
+    <!-- ── Menu items ── -->
+    <string name="menu_fragment1">Fragment 1</string>
+    <string name="menu_fragment2">Fragment 2</string>
+    <string name="menu_list">Fragment List</string>
+
+</resources>
